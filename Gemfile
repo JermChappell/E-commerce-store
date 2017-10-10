@@ -46,8 +46,8 @@ gem 'devise'
 gem 'cancancan'
 
 # image uploads
-gem 'carrierwave'
-
+# gem 'carrierwave'
+gem 'paperclip'
 # other stuff
 gem 'pry-rails'
 

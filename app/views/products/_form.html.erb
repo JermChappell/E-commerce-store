@@ -37,8 +37,14 @@
   </div>
   <div class="field">
     <%= f.label :category_id %><br>
-    <%= f.number_field :category_id %>
+    <%= f.select :category_id, @categories.collect { |c| [ c.name, c.id] }, { include_blank: "Please select a category"} %>
+    </div>
+    
+    <div class="form">
+      <strong>Upload Producgt Image</strong>
+      <%= f.file_field :image %>
   </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
